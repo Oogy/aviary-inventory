@@ -1,0 +1,7 @@
+if [ -z $packages ]; then
+	apt -y update
+	apt -y upgrade
+	apt -y install $packages
+else
+	echo "No packages supplied, skipping"
+fi
