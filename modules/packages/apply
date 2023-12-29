@@ -1,5 +1,4 @@
-# inventory/modules/packages/apply
-if [ -z $packages ]; then
+if [[ -Z ${packages} ]]; then
 	apt -y update
 	apt -y upgrade
 	apt -y install $packages
