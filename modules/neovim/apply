@@ -1,2 +1,7 @@
-cp -R nvim /home/root/.config
-cp -R nvim /home/$primary_user/.config
+export nvim_files=$(dirname $0)/nvim
+cp -R $nvim_files /root/.config
+if [ -z $primary_user ]; then
+	echo "primary_user not set, skipping"
+else
+	cp -R $nvim_files /home/$primary_user/.config/
+fi
