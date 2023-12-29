@@ -1,7 +1,7 @@
-if [ -Z ${packages} ]; then
+if [ -z "${packages}" ]; then
+	echo "No packages supplied, skipping"
+else
 	apt -y update
 	apt -y upgrade
-	apt -y install $packages
-else
-	echo "No packages supplied, skipping"
+	apt -y insall ${packages}
 fi
