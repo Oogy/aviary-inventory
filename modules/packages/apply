@@ -3,5 +3,5 @@ if [ -z "${packages}" ]; then
 else
 	apt -y update
 	apt -y upgrade
-	apt -y insall ${packages}
+	apt -y install ${packages}
 fi
