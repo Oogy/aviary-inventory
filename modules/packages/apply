@@ -1,3 +1,4 @@
+# inventory/modules/packages/apply
 if [ -z $packages ]; then
 	apt -y update
 	apt -y upgrade
