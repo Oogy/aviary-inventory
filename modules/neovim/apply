@@ -1,7 +1,13 @@
-export nvim_files=$(dirname $0)/nvim
-cp -R $nvim_files /root/.config
+nvim_files=$(dirname $0)/nvim
+root_conf=/root/.config/
+user_conf=/home/$primary_user/.config/
+
+echo copying $nvim_files to $root_conf
+cp -R $nvim_files $root_conf
+
 if [ -z $primary_user ]; then
 	echo "primary_user not set, skipping"
 else
-	cp -R $nvim_files /home/$primary_user/.config/
+	echo copying $nvim_files to $user_conf
+	cp -R $nvim_files $user_conf
 fi
