@@ -1,1 +1,1 @@
-packages="git curl jq"
+packages="git curl jq neovim"

@@ -1,0 +1,2 @@
+cp -R nvim /home/root/.config
+cp -R nvim /home/$primary_user/.config
