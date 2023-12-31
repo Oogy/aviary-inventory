@@ -1,0 +1,3 @@
+apt -y install libnginx-mod-rtmp
+cp $(dirname $0)/nginx.conf >> /etc/nginx/conf.d/rtmp.conf
+systemctl reload nginx
