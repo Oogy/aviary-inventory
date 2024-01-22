@@ -1,2 +1,2 @@
-packages="git curl jq neovim tmux"
+packages="git curl jq tmux"
 hostname=$(hostname)
