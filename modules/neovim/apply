@@ -2,7 +2,7 @@ nvim_files=$(dirname $0)/nvim
 root_conf=/root/.config/
 user_conf=/home/$primary_user/.config/
 
-if [ ! -d ${root_conf} ];
+if [ ! -d ${root_conf} ]; then
 	mkdir -p ${root_conf}
 fi
 
