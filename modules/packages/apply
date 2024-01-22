@@ -2,6 +2,7 @@ if [ -z "${packages}" ]; then
 	echo "No packages supplied, skipping"
 else
 	apt -y update
+	# if upgrade do it else don't
 	apt -y upgrade
 	apt -y install ${packages}
 fi
