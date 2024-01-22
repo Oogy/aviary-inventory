@@ -2,6 +2,10 @@ nvim_files=$(dirname $0)/nvim
 root_conf=/root/.config/
 user_conf=/home/$primary_user/.config/
 
+if [ ! -d ${root_conf} ];
+	mkdir -p ${root_conf}
+fi
+
 echo copying $nvim_files to $root_conf
 cp -R $nvim_files $root_conf
 
